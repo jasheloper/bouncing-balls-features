@@ -6,6 +6,8 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
+let ballCount = 0;
+
 
 // function to generate random number
 
@@ -147,6 +149,7 @@ class EvilCircle extends Shape {
   
         if (distance < this.size + ball.size) {
           ball.exists = false;
+          ballCount--;
         }
       }
     }
@@ -155,9 +158,8 @@ class EvilCircle extends Shape {
 }
 
 const balls = [];
-let ballCount = 0;
 
-while (balls.length < 50) {
+while (balls.length < 10) {
   const size = random(10, 20);
   const ball = new Ball(
     // ball position always drawn at least one ball width
@@ -193,6 +195,9 @@ function loop() {
   evilCircle.checkBounds();
   evilCircle.collisionDetect();
 
+  const para = document.querySelector("p");
+ para.textContent = `Ball Count: ${ballCount}`;
+
   requestAnimationFrame(loop);
 }
 
@@ -209,5 +214,3 @@ Increment the count and display the updated number of balls each time a ball is 
 Decrement the count and display the updated number of balls each time the evil circle eats a ball (causes it not to exist).
 */
 
-const para = document.querySelector("p");
-para.textContent = `Ball Count: ${ballCount}`;
