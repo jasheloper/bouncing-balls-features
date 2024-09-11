@@ -5,7 +5,7 @@ To test comprehension of JavaScript objects and object-oriented constructs
 
 **How to Play:**
 
-Get the ball count to 0 by eating all the moving circles on the screen! 
+Get the ball count to `0` by eating all the moving circles on the screen! 
 
 *(Desktop only)*
 
