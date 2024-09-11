@@ -9,6 +9,8 @@ Get the ball count to `0` by eating all the moving circles on the screen!
 
 *(Desktop only)*
 
+![Evil Circle Game](https://raw.githubusercontent.com/jasheloper/bouncing-balls-features/main/evil-circle-game-m.png)
+
 
 **Move the white circle around using the following:**
 
@@ -22,4 +24,4 @@ Get the ball count to `0` by eating all the moving circles on the screen!
 
 **Play here: https://jasheloper.github.io/bouncing-balls-features/**
 
-![Evil Circle Game](https://github.com/jasheloper/bouncing-balls-features/blob/main/evil-circle-game.png?raw=true)
+
