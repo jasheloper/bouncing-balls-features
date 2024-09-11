@@ -150,12 +150,14 @@ class EvilCircle extends Shape {
         }
       }
     }
+
   }
 }
 
 const balls = [];
+let ballCount = 0;
 
-while (balls.length < 5) {
+while (balls.length < 50) {
   const size = random(10, 20);
   const ball = new Ball(
     // ball position always drawn at least one ball width
@@ -169,6 +171,7 @@ while (balls.length < 5) {
   );
 
   balls.push(ball);
+  ballCount++;
 }
 
 
@@ -207,4 +210,4 @@ Decrement the count and display the updated number of balls each time the evil c
 */
 
 const para = document.querySelector("p");
-para.textContent = `Ball Count: ${balls.length}`;
+para.textContent = `Ball Count: ${ballCount}`;
