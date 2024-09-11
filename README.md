@@ -1,7 +1,7 @@
 # Bouncing Balls with Evil Circle
 To test comprehension of JavaScript objects and object-oriented constructs
 
-# Demo
+## Demo
 
 **How to Play:**
 
