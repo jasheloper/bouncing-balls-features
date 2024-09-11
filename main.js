@@ -6,19 +6,6 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
-/* 
-Create a variable that stores a reference to the paragraph.
-
-Keep a count of the number of balls on screen in some way.
-
-Increment the count and display the updated number of balls each time a ball is added to the scene.
-
-Decrement the count and display the updated number of balls each time the evil circle eats a ball (causes it not to exist).
-*/
-
-const para = document.querySelector("p");
-para.textContent = "ball count (test)";
-
 
 // function to generate random number
 
@@ -168,7 +155,7 @@ class EvilCircle extends Shape {
 
 const balls = [];
 
-while (balls.length < 25) {
+while (balls.length < 5) {
   const size = random(10, 20);
   const ball = new Ball(
     // ball position always drawn at least one ball width
@@ -207,3 +194,17 @@ function loop() {
 }
 
 loop();
+
+
+/* 
+Create a variable that stores a reference to the paragraph.
+
+Keep a count of the number of balls on screen in some way.
+
+Increment the count and display the updated number of balls each time a ball is added to the scene.
+
+Decrement the count and display the updated number of balls each time the evil circle eats a ball (causes it not to exist).
+*/
+
+const para = document.querySelector("p");
+para.textContent = `Ball Count: ${balls.length}`;
